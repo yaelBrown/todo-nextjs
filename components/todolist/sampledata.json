@@ -1,0 +1,36 @@
+{
+  "lists": [
+    [
+      {
+        "id": 1,
+        "todo": "First Item"
+      },
+      {
+        "id": 2,
+        "todo": "Second Item"
+      },
+      {
+        "id": 3,
+        "todo": "Third Item"
+      },
+      {
+        "id": 4,
+        "todo": "Fourth Item"
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "todo": "First Item"
+      },
+      {
+        "id": 2,
+        "todo": "Second Item"
+      },
+      {
+        "id": 3,
+        "todo": "Third Item"
+      }
+    ]
+  ]
+}
