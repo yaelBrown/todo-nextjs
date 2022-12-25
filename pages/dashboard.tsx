@@ -3,19 +3,19 @@ import { useEffect, useState } from 'react'
 import data from '../components/todolist/sampledata.json'
 
 const Dashboard: NextPage = () => {
-  useEffect(() => {
-    if (data?.lists.length > 0) {
-      console.log(data.lists)
-      setState({...state, l: data.lists})
-    }
-  }, [])
-
   const initialState: any = {
     l: [],
     sel: -1
   }
 
   const [state, setState] = useState(initialState)
+
+  useEffect(() => {
+    if (data?.lists.length > 0) {
+      console.log(data.lists)
+      setState({...state, l: data.lists})
+    }
+  }, [state])
 
   const renderLists = () => {
     if (state?.l.length === 0) return "No lists found"

@@ -1,13 +1,9 @@
 import type { NextPage } from 'next'
 import Link from 'next/link';
 
-interface IFooterProps {
-  className: string;
-}
-
-const Footer: NextPage = (props: IFooterProps) => {
+const Footer: NextPage = () => {
   return (
-    <footer className={props.className}>
+    <footer>
       <h2>Footer</h2>
       <ul>
         <li><Link href="/">Home</Link></li>
