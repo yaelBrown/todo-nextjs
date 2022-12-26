@@ -11,11 +11,13 @@ const Dashboard: NextPage = () => {
   const [state, setState] = useState(initialState)
 
   useEffect(() => {
-    if (data?.lists.length > 0) {
-      console.log(data.lists)
-      setState({...state, l: data.lists})
+    if (state.l.length === 0) {
+      if (data?.lists.length > 0) {
+        console.log(data.lists)
+        setState({...state, l: data.lists})
+      }
     }
-  }, [state])
+  }, [])
 
   const renderLists = () => {
     if (state?.l.length === 0) return "No lists found"
